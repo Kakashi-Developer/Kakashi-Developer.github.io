@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var homeLink = document.getElementById("homeLink");
+  if (homeLink) {
+    homeLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "index.html";
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var termsLink = document.querySelector("a[href='privacy']");
+  if (termsLink) {
+    termsLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "privacy.html";
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var termsLink = document.querySelector("a[href='terms']");
+  if (termsLink) {
+    termsLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "terms.html";
+    });
+  }
+});
 $(document).ready(function () {
   $(".open").click(function () {
     var container = $(this).parents(".topic")

@@ -2,15 +2,38 @@
 
 :root {
     --bg-color: #0044ff73;
-        --main-color: rgb(94, 145, 255);
-        --main-hover-color: rgb(85, 66, 248);
-        --second-color: #4d4d52;
-        --third-color: #7695fc;
-        --nav-text-color: #0d0d0e;
+    --main-color: rgb(94, 145, 255);
+    --main-hover-color: rgb(85, 66, 248);
+    --second-color: #4d4d52;
+    --third-color: #7695fc;
+    --nav-text-color: #0d0d0e;
     --nav-text-hover-color: #fffce4;
     --heading-color: #141413;
-        --small-text-color: #201f1f;
-        --very-small-text-color: #202020;
+    --small-text-color: #201f1f;
+    --very-small-text-color: #202020;
+}
+
+h1.title {
+    position: relative;
+}
+
+h1.title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #747f8d;
+}
+
+p.quote {
+    background-color: rgb(43, 107, 243);
+    color: #000000;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-left: 4px solid #747f8d;
 }
 
 /* random */
